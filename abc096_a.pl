@@ -37,7 +37,7 @@ f(X, A, B) :- A =< B , X is A, !.
 f(X, A, B) :- X is A - 1.
 
 main :-
-	get_number(A),
+    get_number(A),
     get_number(B),
     f(X, A, B),
     writeln(X).

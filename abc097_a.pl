@@ -16,11 +16,11 @@ f(A, B, C, D) :- abs(C - A) =< D.
 f(A, B, C, D) :- abs(C - B) =< D , abs(B - A) =< D.
 
 main :-
-	get_number(A),
+    get_number(A),
     get_number(B),
     get_number(C),
     get_number(D),
-	f(A, B, C, D) -> writeln("Yes") ; writeln("No").
+    f(A, B, C, D) -> writeln("Yes") ; writeln("No").
 
 #########################################
 :- use_module(library(clpfd)).

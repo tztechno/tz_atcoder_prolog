@@ -20,11 +20,11 @@ main :-
 	write(Time),
 	nl,
 	halt.
+ 
 main :- write(0),
 	nl,
 	halt.
 	
-
 read_str(S) :-
         read_string(current_input, ' \n', '', _, S).
 
@@ -51,4 +51,5 @@ main :-
     Max is max(min(B,D)-max(A,C),0),
     write(Max),
     nl.
+    
 ##############################

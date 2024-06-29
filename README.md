@@ -30,7 +30,15 @@
 ```
 ---
 ```
+day([25],'Christmas').
+day([24],'Christmas Eve').
+day([23],'Christmas Eve Eve').
+day([22],'Christmas Eve Eve Eve').
 
+main:-
+ readln(Input),
+ day(Input,Ans),
+ writeln(Ans).
 ```
 ---
 ```
